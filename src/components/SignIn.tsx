@@ -2,7 +2,9 @@ import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../hooks/redux';
 import { setUser } from '../store/userSlice';
+import { notify } from '../utils/warn';
 import { Form } from './Form';
+import { Toast } from './Toast';
 
 export const SignIn = () => {
   const dispatch = useAppDispatch();
@@ -21,7 +23,7 @@ export const SignIn = () => {
         );
         navigate('/');
       })
-      .catch(() => alert("This user doesn't exist."));
+      .catch(notify);
   };
 
   return (
@@ -30,6 +32,7 @@ export const SignIn = () => {
         title='Log In'
         callback={handleLogin}
       />
+      <Toast />
     </div>
   );
 };
