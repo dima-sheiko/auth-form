@@ -21,7 +21,7 @@ export const SignIn = () => {
         );
         navigate('/');
       })
-      .catch(() => alert('Invalid user!'));
+      .catch(() => alert("This user doesn't exist."));
   };
 
   return (
