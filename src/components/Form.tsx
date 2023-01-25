@@ -42,7 +42,10 @@ export const Form = ({ title, callback }: FormProps) => {
         placeholder='Password'
       />
       <p>{errors.password?.message}</p>
-      <button type='submit' disabled={!isValid || isSubmitting}>
+      <button
+        type='submit'
+        disabled={!isValid || isSubmitting}
+      >
         {title}
       </button>
     </form>
