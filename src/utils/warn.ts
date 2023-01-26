@@ -1,7 +1,7 @@
 import { toast } from 'react-toastify';
 
 export const notify = () =>
-  toast.warn("This user doesn't exist.", {
+  toast.warn("Incorrect email or password.", {
     position: 'top-center',
     autoClose: 5000,
     hideProgressBar: false,
