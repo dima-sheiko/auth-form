@@ -55,7 +55,7 @@ export const SignIn = () => {
   return (
     <div>
       <Form
-        title='Log In'
+        title='Sign In'
         callback={handleLogin}
       />
       <Toast />
