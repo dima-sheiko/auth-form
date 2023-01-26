@@ -37,6 +37,10 @@ export const Form = ({ title, callback }: FormProps) => {
       <input
         {...register('password', {
           required: 'This field is required.',
+          minLength: {
+            value: 7,
+            message: 'Password length must be greater than 7 characters.',
+          },
         })}
         type='password'
         placeholder='Password'
