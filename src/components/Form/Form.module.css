@@ -105,3 +105,11 @@ a:hover {
   color: rgb(84, 111, 201);
   transition: 0.3s;
 }
+
+/* Media */
+
+@media (max-width: 445px) {
+  .wrapper {
+    padding: 77px 35px 33px;
+  }
+}
