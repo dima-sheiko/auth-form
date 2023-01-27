@@ -2,7 +2,9 @@ import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../hooks/redux';
 import { setUser } from '../../store/userSlice';
+import { notify } from '../../utils/user-exist';
 import { Form } from '../Form';
+import { Toast } from '../Toast';
 import styles from './SignUp.module.css';
 
 export const SignUp = () => {
@@ -22,7 +24,7 @@ export const SignUp = () => {
         );
         navigate('/');
       })
-      .catch(console.error);
+      .catch(notify);
   };
 
   return (
@@ -31,6 +33,7 @@ export const SignUp = () => {
         title='Sign Up'
         callback={handleSignUp}
       />
+      <Toast />
     </div>
   );
 };
