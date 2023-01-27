@@ -10,6 +10,7 @@ import { setUser } from '../../store/userSlice';
 import { notify } from '../../utils/warn';
 import { Form } from '../Form';
 import { Toast } from '../Toast';
+import styles from './SignIn.module.css';
 
 export const SignIn = () => {
   const navigate = useNavigate();
@@ -53,7 +54,7 @@ export const SignIn = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <Form
         title='Sign In'
         callback={handleLogin}

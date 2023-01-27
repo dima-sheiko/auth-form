@@ -1,4 +1,4 @@
-import { getAuth, signOut } from 'firebase/auth';
+import { getAuth } from 'firebase/auth';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../hooks/redux';
 import { removeUser } from '../store/userSlice';

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../hooks/redux';
 import { setUser } from '../../store/userSlice';
 import { Form } from '../Form';
+import styles from './SignUp.module.css';
 
 export const SignUp = () => {
   const dispatch = useAppDispatch();
@@ -25,7 +26,7 @@ export const SignUp = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <Form
         title='Sign Up'
         callback={handleSignUp}
