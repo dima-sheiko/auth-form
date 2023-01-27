@@ -1,11 +1,11 @@
 .wrapper {
-  flex: 1;
   max-width: 390px;
   padding: 77px 55px 33px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
   border-radius: 10px;
   box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
   background: #fff;
@@ -44,7 +44,9 @@
   height: 45px;
   background: 0 0;
   border: none;
-  border-bottom: 2px solid #adadad;
+  border-bottom: 2px solid;
+  border-bottom-color: #adadad;
+  transition: 0.3s;
   outline: none;
 }
 
@@ -94,6 +96,11 @@ a {
 
 /* Pseudo */
 
+.input:focus {
+  border-bottom-color: #764ba2;
+  transition: 0.3s;
+}
+
 .button:active {
   filter: brightness(80%);
 }
@@ -109,7 +116,7 @@ a {
 }
 
 a:hover {
-  color: rgb(84, 111, 201);
+  color: #764ba2;
   transition: 0.3s;
 }
 
