@@ -56,7 +56,7 @@ export const Form = ({ title, callback }: FormProps) => {
               required: 'This field is required.',
               minLength: {
                 value: 7,
-                message: 'Password length must be greater than 7 characters.',
+                message: 'Minimum length is 7 characters.',
               },
             })}
             className={styles.input}
