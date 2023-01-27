@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../../hooks/redux';
 import { setUser } from '../../store/userSlice';
-import { notify } from '../../utils/warn';
+import { notify } from '../../utils/wrong-password';
 import { Form } from '../Form';
 import { Toast } from '../Toast';
 import styles from './SignIn.module.css';
