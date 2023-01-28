@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { IFormData } from '../../types/IFormData';
 import icon from '../../assets/icon.svg';
 import styles from './Form.module.css';
+import { Button } from '../Button/Button';
 
 interface FormProps {
   title: string;
@@ -65,13 +66,11 @@ export const Form = ({ title, callback }: FormProps) => {
           />
           <p className={styles.error}>{errors.password?.message}</p>
         </div>
-        <button
-          className={styles.button}
+        <Button
           type='submit'
           disabled={isSubmitting}
-        >
-          {title}
-        </button>
+          title={title}
+        />
       </form>
       {title === 'Sign In' ? (
         <div className={styles.info}>
