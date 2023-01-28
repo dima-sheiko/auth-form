@@ -56,30 +56,6 @@
   position: absolute;
 }
 
-.button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 20px;
-  
-  color: #fff;
-  background-size: 300% 100%;
-  background-image: linear-gradient(
-    to right,
-    #667eea,
-    #764ba2,
-    #6b8dd6,
-    #8e37d7
-  );
-  transition: all 0.4s ease-in-out;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
 .info {
   padding-top: 115px;
   font-size: 0.938rem;
@@ -100,20 +76,6 @@ a {
 .input:focus {
   border-bottom-color: #764ba2;
   transition: 0.3s;
-}
-
-.button:active {
-  filter: brightness(80%);
-}
-
-.button:hover {
-  background-position: 100% 0;
-  transition: all 0.4s ease-in-out;
-}
-
-.button:disabled {
-  filter: grayscale(50%);
-  pointer-events: none;
 }
 
 a:hover {
