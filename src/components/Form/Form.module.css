@@ -85,9 +85,9 @@ a:hover {
 
 /* Media */
 
-@media (max-width: 445px) {
+@media (max-width: 470px) {
   .wrapper {
-    padding: 77px 35px 33px;
+    padding: 57px 35px 33px;
   }
 
   .error {
