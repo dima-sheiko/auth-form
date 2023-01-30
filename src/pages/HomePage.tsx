@@ -1,9 +1,9 @@
 import { Navigate } from 'react-router-dom';
-import { Home } from '../components/Home';
+import { Content } from '../components/Content';
 import { useAuth } from '../hooks/useAuth';
 
 export const HomePage = () => {
   const { isAuth } = useAuth();
 
-  return isAuth ? <Home /> : <Navigate to='/login' />;
+  return isAuth ? <Content /> : <Navigate to='/login' />;
 };
