@@ -51,7 +51,7 @@
 }
 
 .error {
-  font-size: 0.938rem;
+  font-size: 0.875rem;
   color: rgb(204, 34, 34);
   position: absolute;
 }
@@ -88,5 +88,9 @@ a:hover {
 @media (max-width: 445px) {
   .wrapper {
     padding: 77px 35px 33px;
+  }
+
+  .error {
+    font-size: 0.75rem;
   }
 }
